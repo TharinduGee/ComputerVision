@@ -7,6 +7,7 @@ def spatial_average(image):
      def average_kernel(size):
           return np.ones((size, size), dtype=np.float32) / (size * size)
 
+     # using filter2D method to iterate the kernal as a filter, through out the image
      spatial_avg_3x3 = cv2.filter2D(image, -1, average_kernel(3))
      spatial_avg_10x10 = cv2.filter2D(image, -1, average_kernel(10))
      spatial_avg_20x20 = cv2.filter2D(image, -1, average_kernel(20))
