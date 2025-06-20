@@ -29,6 +29,10 @@ def main():
      cv2.imshow("5x5 Block Averaged", block_avg_5x5)
      cv2.imshow("7x7 Block Averaged", block_avg_7x7)
 
+     cv2.imwrite("3x3 Block Averaged.jpg", block_avg_3x3)
+     cv2.imwrite("5x5 Block Averaged.jpg", block_avg_5x5)
+     cv2.imwrite("7x7 Block Averaged.jpg", block_avg_7x7)
+
      cv2.waitKey(0)
      cv2.destroyAllWindows()
 

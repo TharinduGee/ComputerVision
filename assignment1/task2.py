@@ -17,6 +17,10 @@ def spatial_average(image):
      cv2.imshow('10x10 Average', spatial_avg_10x10)
      cv2.imshow('20x20 Average', spatial_avg_20x20)
 
+     cv2.imwrite('3x3 Average.jpg', spatial_avg_3x3)
+     cv2.imwrite('10x10 Average.jpg', spatial_avg_10x10)
+     cv2.imwrite('20x20 Average.jpg', spatial_avg_20x20)
+
      cv2.waitKey(0)
      cv2.destroyAllWindows()
 

@@ -36,6 +36,9 @@ def main():
     cv2.imshow("45 degree rotated image", rotated_45)
     cv2.imshow("90 degree rotated image", rotated_90)
 
+    cv2.imwrite("45 degree rotated image.jpg", rotated_45)
+    cv2.imwrite("90 degree rotated image.jpg", rotated_90)
+
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
