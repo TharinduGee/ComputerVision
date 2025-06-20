@@ -21,6 +21,7 @@ def main():
 
      reduced_image = reduce_intensity(image, levels)
      output_path = f"reduced_image-{levels}_levels.jpg"
+     cv2.imshow(output_path, reduced_image)
      cv2.imwrite(output_path, reduced_image)
      print(f"Output saved as {output_path}")
 
