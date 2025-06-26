@@ -84,6 +84,7 @@ def main():
      cv2.imshow("Noisy Image", noisy_image)
      cv2.imshow(f"Binarized Image - Otsu threshold {otsu_thresh}", binary_img)
 
+     cv2.imwrite("generated_image.jpg", original_image)
      cv2.imwrite("noisy_image.jpg", noisy_image)
      cv2.imwrite(f"binarized_otsu_{otsu_thresh}.jpg", binary_img)
 
